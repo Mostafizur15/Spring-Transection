@@ -1,16 +1,21 @@
 package com.mamun.springboot.transection.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
+
 
 @Entity
-@Data
+@Setter
+@Getter
+@NoArgsConstructor
+@ToString(exclude = "product")
 public class Review {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
-    String type;
-
+    private Integer id;
+    private String comment;
+    private int rating;
+    @JsonIgnore
     @ManyToOne
-    private Account account;
+    private Product product;
 }

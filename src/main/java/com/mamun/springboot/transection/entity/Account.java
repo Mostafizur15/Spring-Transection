@@ -15,6 +15,6 @@ public class Account {
     private String name;
     private Double balance;
 
-    @OneToMany(mappedBy = "account", fetch = FetchType.LAZY)
-    List<Review> review;
+    /*@OneToMany(mappedBy = "account", fetch = FetchType.LAZY)
+    List<Review> review;*/
 }

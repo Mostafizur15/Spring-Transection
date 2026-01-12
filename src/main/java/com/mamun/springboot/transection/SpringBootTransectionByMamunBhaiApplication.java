@@ -27,10 +27,12 @@ public class SpringBootTransectionByMamunBhaiApplication implements CommandLineR
 	@Transactional
 	public void run(String... args) throws Exception {
 		//accountService.moneyTransfer(1,2,500.00);
+/*
 
 		Account ac = entityManager.find(Account.class,1);
 		System.out.println(ac.getName());
 		System.out.println(ac.getReview()); // re-use that session.
+*/
 
 
 		/*EntityManager em = emf.createEntityManager();
